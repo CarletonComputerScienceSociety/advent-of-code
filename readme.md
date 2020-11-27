@@ -2,7 +2,7 @@
 
 <img src="https://miro.medium.com/max/1200/1*XtCMwEXZe2VcH-jfcHwCBQ.jpeg">
 
-Advent of Code is an Advent calendar of small programming puzzles for a variety skill levels that can be solved in any programming language you like. This year, the CCSS will be hosting its own Advent of Code leaderboard and solutions repository. We'd love for any Carleton students to contribute their solutions! For more information on Advent of Code click <a href="https://adventofcode.com/2020/about">here.</a>
+Advent of Code is an Advent calendar of small programming puzzles that can be solved in any programming language you like. This year, the CCSS will be hosting its own Advent of Code leaderboard and solutions repository. We'd love for any Carleton students to contribute their solutions! For more information on Advent of Code click <a href="https://adventofcode.com/2020/about">here.</a>
 
 # Join our Leaderboard
 
