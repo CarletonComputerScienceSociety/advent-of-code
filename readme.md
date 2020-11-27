@@ -6,7 +6,7 @@ Advent of Code is an Advent calendar of small programming puzzles for a variety 
 
 # Join our Leaderboard
 
-To join the CCSS Advent of code leaderboard navigate <a href="https://adventofcode.com/2020/leaderboard">here</a> and enter the following leaderboard code:
+To join the CCSS Advent of Code leaderboard navigate <a href="https://adventofcode.com/2020/leaderboard">here</a> and enter the following leaderboard code:
 
 `970906-fa1dc2ae`
 
