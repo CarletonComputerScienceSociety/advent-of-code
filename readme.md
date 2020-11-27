@@ -16,4 +16,4 @@ If you'd like to contribute a solution, create folder under the corresponding da
 
 ### Example
 
-`day-01/MathyouMB/Solution.py`
+`2020/day-01/MathyouMB/Solution.py`
