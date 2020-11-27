@@ -12,7 +12,7 @@ To join the CCSS Advent of code leaderboard navigate <a href="https://adventofco
 
 # Contribute Solution
 
-If you'd like to contribute a solution, create folder under the corresponding day named after your <b>Github Username</b> containing your solution in your language of choice!
+If you'd like to contribute a solution, create a folder under the corresponding day named after your <b>Github Username</b> containing your solution in your language of choice!
 
 ### Example
 
