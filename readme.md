@@ -16,4 +16,4 @@ If you'd like to contribute a solution, create a folder under the corresponding 
 
 ### Example
 
-`2020/day-01/MathyouMB/Solution.py`
+`2020/day-01/YOURUSERNAME/Solution.py`
