@@ -1,0 +1,5 @@
+for i in range (len(lst)):
+    for j in range (len(lst)):
+        for l in range(len(lst)):
+            if lst[i] + lst[j] + lst[l] == 2020:
+                print(lst[i]*lst[j]*lst[l])
