@@ -7,7 +7,7 @@ with open("input.txt", 'r') as f:
 def parse_line(line):
     parts = line.split(" ")
     nums = parts[0].split("-")
-    min = int(nums[0])
+    min = int(nums[1])
     max = int(nums[1])
     letter = parts[1][0]
     string = parts[2]
