@@ -3,7 +3,7 @@
 
 commands = []
 
-# Read Sonar Sensor (data/day_1.txt)
+# Read data input
 with open('data/day_2.txt') as data_file:
     read_lines = data_file.readlines()
     data_file.close()
