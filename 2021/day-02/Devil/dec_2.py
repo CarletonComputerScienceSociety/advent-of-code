@@ -3,7 +3,7 @@
 
 commands = []
 
-# Read Sonar Sensor (data/day_1.txt)
+# Read data input
 with open('data/day_2.txt') as data_file:
     read_lines = data_file.readlines()
     data_file.close()
@@ -20,13 +20,14 @@ vertical_pos = 0
 
 for i in range(len(commands)):
     split_string = commands[i].split(" ")
+    cmd = split_string[0]
     value = int(split_string[1])
 
-    if split_string[0] == "down":
+    if cmd == "down":
         vertical_pos -= value
-    if split_string[0] == "up":
+    if cmd == "up":
         vertical_pos += value
-    if split_string[0] == "forward":
+    if cmd == "forward":
         forward_pos += value
 
 print("The position is forward {} and vertical {}!".format(forward_pos, vertical_pos))
@@ -40,13 +41,14 @@ aim = 0
 
 for i in range(len(commands)):
     split_string = commands[i].split(" ")
+    cmd = split_string[0]
     value = int(split_string[1])
 
-    if split_string[0] == "down":
+    if cmd == "down":
         aim += value
-    if split_string[0] == "up":
+    if cmd == "up":
         aim -= value
-    if split_string[0] == "forward":
+    if cmd == "forward":
         horizontal_pos += value
         depth += aim * value
 
