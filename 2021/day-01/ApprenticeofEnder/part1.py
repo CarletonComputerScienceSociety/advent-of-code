@@ -1,4 +1,4 @@
-with open('part1.txt', 'r') as infile:
+with open('input.txt', 'r') as infile:
     data = [int(point) for point in infile.readlines()]
 
 increases = 0
