@@ -2,7 +2,7 @@
 
 points = {}
 
-file = open("day5sample.txt")
+file = open("day5.txt")
 
 for line in file:
     x1 = int(line.strip().split(" -> ")[0].split(",")[0])
