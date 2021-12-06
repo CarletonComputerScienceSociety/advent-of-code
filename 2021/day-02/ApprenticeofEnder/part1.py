@@ -1,4 +1,4 @@
-with open('D:\\RBFiles\\University\\CCSS\\advent-of-code\\2021\\day-02\\ApprenticeofEnder\\input.txt', 'r') as infile:
+with open('input.txt', 'r') as infile:
     instructions = [command.strip() for command in infile.readlines()]
 
 commands = {
