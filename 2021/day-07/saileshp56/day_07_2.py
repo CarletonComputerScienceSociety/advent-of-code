@@ -22,7 +22,7 @@ def fibb(n):
 
 
 
-f = open('mymapdesert.txt', 'r')
+f = open('input.txt', 'r')
 
 file_data = f.read()
 
