@@ -34,7 +34,7 @@ def part2(data):
         return size
 
     basinSize = []
-    for r in range(colSize):
+    for r in range(rowSize):
         for c in range(colSize):
             if data[r][c] != 9:
                 basinSize.append(floodfill(r, c))
