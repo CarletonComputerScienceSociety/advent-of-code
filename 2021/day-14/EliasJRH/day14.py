@@ -20,33 +20,27 @@ BC -> B
 CC -> N
 CN -> C"""
 
-lines = inf.split("\n")
-
-pairs = {}
-
-occurs = {}
-tempOccurs = {}
-letters = {}
-
-template = list(lines[0])
-
-for line in range(2, len(lines)):
-    lines[line] = lines[line].split(" ")
-    pairs[lines[line][0]] = lines[line][2]
-
-for par in range(len(template) - 1):
-    curPair = template[par] + template[par + 1]
-    if curPair not in occurs:
-        occurs[curPair] = 0
-    occurs[curPair] += 1
-
 def solve(ran):
 
-    global pairs
-    global occurs
-    global tempOccurs
-    global letters
-    global template
+    lines = inf.split("\n")
+    
+    pairs = {}
+
+    occurs = {}
+    tempOccurs = {}
+    letters = {}
+
+    template = list(lines[0])
+
+    for line in range(2, len(lines)):
+        lines[line] = lines[line].split(" ")
+        pairs[lines[line][0]] = lines[line][2]
+
+    for par in range(len(template) - 1):
+        curPair = template[par] + template[par + 1]
+        if curPair not in occurs:
+            occurs[curPair] = 0
+        occurs[curPair] += 1
 
     for x in range(ran):
         for key in occurs:
