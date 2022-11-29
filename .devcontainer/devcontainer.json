@@ -2,18 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
 	"name": "Debian",
-	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
-	"features": {
-		"ghcr.io/devcontainers/features/go:1": {},
-		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers/features/ruby:1": {},
-		"ghcr.io/devcontainers/features/rust:1": {},
-		"ghcr.io/devcontainers-contrib/features/deno:1": {},
-		"ghcr.io/devcontainers-contrib/features/typescript:1": {},
-		"ghcr.io/devcontainers-contrib/features/zig:1": {},
-		"ghcr.io/shyim/devcontainers-features/php:0": {}
-	}
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
