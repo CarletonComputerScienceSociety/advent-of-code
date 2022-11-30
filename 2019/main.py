@@ -24,12 +24,11 @@ def part2(puzzle_input):
     for line in puzzle_input:
         mini_total_counter = 0
         line_counter = int(line)
-        # line_counter -= line_counter//3-2
-        while line_counter >= 0: ########<----------- THIS IS BROKEN
-            line_counter -= line_counter//3-2
-            print(line_counter)
+        while line_counter > 0:
+            line_counter = (line_counter//3)-2
+            if line_counter < 0:
+                break
             mini_total_counter += line_counter
-            print(mini_total_counter)
         total_counter += mini_total_counter
 
     return total_counter
