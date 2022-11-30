@@ -12,12 +12,25 @@ def get_input():
 
 
 def part1(puzzle_input):
-    pass
+    counter = 0
+    for line in puzzle_input:
+        counter += int(line) // 3 - 2
+    return counter
 
 
 def part2(puzzle_input):
-    pass
+    total = 0
+    for line in puzzle_input:
+        recursion(line)
+        total += recursion(line)
+    return total
 
+def recursion(line):
+    counter = int(line) // 3 - 2
+    if counter <= 0:
+        return 0
+    else:
+        return counter + recursion(counter)
 
 puzzle_input = get_input()
 
