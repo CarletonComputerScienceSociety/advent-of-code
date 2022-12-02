@@ -1,8 +1,9 @@
-(ql:quickload '(:alexandria :serapeum :cl-ppcre))
+(ql:quickload '(:alexandria :serapeum))
 (defpackage ac-02
-  (:use :cl :alexandria :serapeum)
-  (:local-nicknames (:re :cl-ppcre)))
+  (:use :cl :alexandria :serapeum))
 (in-package :ac-02)
+
+(declaim (optimize speed))
 
 (defun read-input (path)
   (mapcar (lambda (line)
@@ -46,4 +47,32 @@
 
 (defun solve2 (strats)
   (sum (mapcar #'score-round2 strats)))
+
+(defparameter *payoff*
+  #2A((3 6 0)
+      (0 3 6)
+      (6 0 3)))
+
+(defun read-input-numeric (path)
+  (mapcar (lambda (line)
+	    (cons (- (char-code (aref line 0)) (char-code #\A))
+		  (- (char-code (aref line 2)) (char-code #\X))))
+	  (lines (read-file-into-string path))))
+
+(defun score-round1-num (round)
+  (+ (aref *payoff* (car round) (cdr round))
+     (cdr round)
+     1))
+
+(defun solve1-num (strats)
+  (sum (mapcar #'score-round1-num strats)))
+
+(defun score-round2-num (round)
+  (let* ((score (* 3 (cdr round)))
+	 (move (do ((i 0 (1+ i)))
+		   ((= (aref *payoff* (car round) i) score) i))))
+    (+ score move 1)))
+
+(defun solve2-num (strats)
+  (sum (mapcar #'score-round2-num strats)))
 
